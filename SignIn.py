@@ -27,7 +27,8 @@ def xmu():
         time.sleep(10)
 
         try:
-            browser.find_element_by_xpath("//*[@class='app_child box_flex'][1]").click()
+            ''' 点击 Daily Health Report 健康打卡 防疫管理 '''
+            browser.find_element_by_xpath("/html/body/div[1]/div/div/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div/div[1]").click()
             time.sleep(10)
 
             try:
@@ -53,7 +54,7 @@ def xmu():
                     try:
                         # 用edge的debug模式居然不显示Xpath，chrome的有，浪费一堆时间。。。
                         # 点击 "本人是否承诺所填报的全部内容均属实"
-                        browser.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div[2]/div[1]/div/div/div[3]/div/div[22]/div/div/div").click()
+                        browser.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div[2]/div[1]/div/div/div[3]/div/div[30]/div/div/div").click()
                         time.sleep(10)
                         # browser.find_element_by_xpath("//*[@title='请选择'][3]").click()
                         # browser.find_element_by_xpath("//div[@class='form-control dropdown-toggle'][4]").click()
